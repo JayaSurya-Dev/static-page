@@ -1,11 +1,127 @@
-<!-- static-site/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Simple Web App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps Lifecycle & Tools</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🚀 Welcome to My Web App Deployed on ECS Fargate!</h1>
-    <p>Hosted using Nginx + Docker + AWS</p>
+  <header>
+    <h1>DevOps Lifecycle & Tools</h1>
+    <p>Understand the process and tools involved in modern DevOps practices</p>
+  </header>
+
+  <section class="block" id="intro">
+    <h2>🔁 What is DevOps?</h2>
+    <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the development lifecycle and deliver high-quality software continuously.</p>
+  </section>
+
+  <section class="block" id="lifecycle">
+    <h2>📈 DevOps Lifecycle</h2>
+    <div class="lifecycle-container">
+      <div class="phase">1. Plan</div>
+      <div class="phase">2. Develop</div>
+      <div class="phase">3. Build</div>
+      <div class="phase">4. Test</div>
+      <div class="phase">5. Release</div>
+      <div class="phase">6. Deploy</div>
+      <div class="phase">7. Operate</div>
+      <div class="phase">8. Monitor</div>
+    </div>
+  </section>
+
+  <section class="block" id="tools">
+    <h2>🛠️ Common Tools Used in DevOps</h2>
+    <div class="tools-grid">
+      <div><strong>Plan:</strong> Jira, Trello</div>
+      <div><strong>Develop:</strong> Git, GitHub, GitLab</div>
+      <div><strong>Build:</strong> Maven, Gradle</div>
+      <div><strong>Test:</strong> Selenium, JUnit</div>
+      <div><strong>Release:</strong> Jenkins, GitHub Actions</div>
+      <div><strong>Deploy:</strong> Docker, Kubernetes, ECS</div>
+      <div><strong>Operate:</strong> AWS, Azure, Linux</div>
+      <div><strong>Monitor:</strong> Prometheus, Grafana, CloudWatch</div>
+    </div>
+  </section>
+
+  <section class="block" id="summary">
+    <h2>📌 Summary</h2>
+    <p>DevOps enables fast and reliable software delivery by integrating developers and operations teams. It relies on automation, monitoring, and continuous feedback to ensure success in dynamic environments.</p>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Surya | DevOps Enthusiast</p>
+  </footer>
 </body>
 </html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #1f2937;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.block {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.lifecycle-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.phase {
+  flex: 1 1 22%;
+  background: #e0f2f1;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tools-grid div {
+  background: #ede7f6;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f2937;
+  color: white;
+  margin-top: 2rem;
+}
