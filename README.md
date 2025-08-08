@@ -89,11 +89,19 @@ odePipeline Role – Permissions to:
       2)Update ECS service (ecs:UpdateService).
 
 Challenges Faced
-
+ 
   1)Task stuck in PENDING due to incorrect subnet or security group settings.
 
    2)YAML_FILE_ERROR in CodeBuild caused by incorrect indentation in buildspec.yml.
    3)Deployment timeout when old ECS tasks did not stop within the pipeline timeout period.
+
+
+   <img width="1001" height="432" alt="image" src="https://github.com/user-attachments/assets/16dc8782-a602-4ade-92b1-ea6e7e6f9217" />
+
+
+   <img width="745" height="395" alt="image" src="https://github.com/user-attachments/assets/fef4dc67-0cc7-4714-89b1-b7b0a15bb974" />
+
+
 
    4)IAM role misconfiguration preventing ECS from pulling images from ECR.
 
